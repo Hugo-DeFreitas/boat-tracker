@@ -42,7 +42,6 @@ public class Welcome extends AppCompatActivity {
     private ListView _boat_list;
     private SignInButton _sign_in_button; // Boutton d'authentification Google.
     private Button _sign_out_button;
-    private MaterialFancyButton _message_for_not_connected_user;
     private MaterialFancyButton _create_new_boat;
 
     /**
@@ -146,18 +145,15 @@ public class Welcome extends AppCompatActivity {
      */
     private void updateUI(Boolean isUserConnected){
         //On bind les vues.
-        _message_for_not_connected_user = findViewById(R.id.message_for_not_connected_user);
         _sign_out_button = findViewById(R.id.sign_out_button);
+        //On affiche les bateaux.
+        _boat_list.setVisibility(View.VISIBLE);
         if(isUserConnected){
             //On change le message d'arrivée
             TextView welcomeMessage = findViewById(R.id.welcome_message);
             welcomeMessage.setText(String.format("Bienvenue %s!", _user_connected_with_google.getGivenName()));
-            //On affiche les bateaux.
-            _boat_list.setVisibility(View.VISIBLE);
             // On cache le boutton de sign in avec Google
             _sign_in_button.setVisibility(View.GONE);
-            //On cache l'invitation à la connexion
-            _message_for_not_connected_user.setVisibility(View.GONE);
             // On affiche la possibilité de se déconnecter.
             _sign_out_button.setVisibility(View.VISIBLE);
             _sign_out_button.setOnClickListener(new View.OnClickListener() {
@@ -176,12 +172,8 @@ public class Welcome extends AppCompatActivity {
             //On change le message d'arrivée
             TextView welcomeMessage = findViewById(R.id.welcome_message);
             welcomeMessage.setText("Bienvenue sur BoatTracker!");
-            //On indique à l'utilisateur qu'il doit se connecter.
-            _message_for_not_connected_user.setVisibility(View.VISIBLE);
             // On affiche le boutton de sign in avec Google
             _sign_in_button.setVisibility(View.VISIBLE);
-            //On cache les bateaux.
-            _boat_list.setVisibility(View.GONE);
             // On cache la possibilité de se déconnecter.
             _sign_out_button = findViewById(R.id.sign_out_button);
             _sign_out_button.setVisibility(View.GONE);

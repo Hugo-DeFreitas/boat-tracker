@@ -97,26 +97,6 @@
         </com.rilixtech.materialfancybutton.MaterialFancyButton>
     </LinearLayout>
 
-    <com.rilixtech.materialfancybutton.MaterialFancyButton
-        android:id="@+id/message_for_not_connected_user"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="5dp"
-        android:textAlignment="center"
-        android:visibility="visible"
-        fancy:mfb_borderColor="#FFFFFF"
-        fancy:mfb_defaultColor="@color/colorAccentLight"
-        fancy:mfb_focusColor="@color/colorAccentLight"
-        fancy:mfb_fontIconSize="20dp"
-        fancy:mfb_icon="@string/fawi_question_circle"
-        fancy:mfb_iconPosition="left"
-        fancy:mfb_radius="30dp"
-        fancy:mfb_text="Veuillez vous connecter pour pouvoir accéder aux bateaux."
-        fancy:mfb_textSize="20dp">
-
-    </com.rilixtech.materialfancybutton.MaterialFancyButton>
-
     <ListView
         android:id="@+id/boats_list_view"
         android:layout_width="match_parent"
