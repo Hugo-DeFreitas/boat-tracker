@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Welcome">
+
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_boat_in_harbor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image_boat_in_harbor_description"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/boat_in_harbor"
+            tools:srcCompat="@drawable/boat_in_harbor" />
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/log_out_label"
+            android:visibility="gone" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        </com.google.android.gms.common.SignInButton>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            fancy:mfb_borderColor="#FFFFFF"
+            fancy:mfb_defaultColor="@color/grayForTitle"
+            fancy:mfb_focusColor="@color/grayForTitle"
+            fancy:mfb_fontIconSize="20dp"
+            fancy:mfb_icon="@string/fawi_ship"
+            fancy:mfb_iconPosition="left"
+            fancy:mfb_radius="30dp"
+            fancy:mfb_text="Liste des bateaux en mer"
+            fancy:mfb_textSize="20dp"
+            android:layout_weight="1">
+
+        </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/create_new_boat"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            fancy:mfb_borderColor="#FFFFFF"
+            fancy:mfb_defaultColor="@color/colorEditButtons"
+            fancy:mfb_focusColor="@color/colorEditButtonsPressed"
+            fancy:mfb_fontIconSize="20dp"
+            fancy:mfb_icon="@string/fawi_plus_circle"
+            fancy:mfb_iconPosition="left"
+            fancy:mfb_radius="30dp"
+            fancy:mfb_text=""
+            fancy:mfb_textSize="20dp"
+            android:layout_weight="0">
+
+        </com.rilixtech.materialfancybutton.MaterialFancyButton>
+    </LinearLayout>
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/message_for_not_connected_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        fancy:mfb_borderColor="#FFFFFF"
+        fancy:mfb_defaultColor="@color/colorAccentLight"
+        fancy:mfb_focusColor="@color/colorAccentLight"
+        fancy:mfb_fontIconSize="20dp"
+        fancy:mfb_icon="@string/fawi_question_circle"
+        fancy:mfb_iconPosition="left"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_text="Veuillez vous connecter pour pouvoir accéder aux bateaux."
+        fancy:mfb_textSize="20dp">
+
+    </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+    <ListView
+        android:id="@+id/boats_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:visibility="gone">
+
+    </ListView>
+
+
+</LinearLayout>

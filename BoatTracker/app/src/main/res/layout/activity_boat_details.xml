@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BoatDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/pre_boat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_borderColor="#FFFFFF"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_icon="@string/fawi_anchor"
+                    fancy:mfb_iconPosition="left"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_text="@string/boat_name_title"
+                    fancy:mfb_textSize="15dp" />
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/boat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_defaultColor="@color/colorPrimaryDark"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_textSize="15dp" />
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/edit_boat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_borderColor="#FFFFFF"
+                    fancy:mfb_defaultColor="@color/colorAccent"
+                    fancy:mfb_focusColor="@color/colorAccentLight"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_icon="@string/fawi_pencil"
+                    fancy:mfb_iconPosition="left"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_text=""
+                    fancy:mfb_textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+
+                    <com.rilixtech.materialfancybutton.MaterialFancyButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:textAlignment="center"
+                        fancy:mfb_borderColor="#FFFFFF"
+                        fancy:mfb_defaultColor="@color/colorPrimary"
+                        fancy:mfb_focusColor="@color/colorPrimary"
+                        fancy:mfb_fontIconSize="20dp"
+                        fancy:mfb_icon="@string/fawi_anchor"
+                        fancy:mfb_iconPosition="left"
+                        fancy:mfb_radius="10dp"
+                        fancy:mfb_text="Description du bateau"
+                        fancy:mfb_textSize="15dp" />
+
+                    <com.rilixtech.materialfancybutton.MaterialFancyButton
+                        android:id="@+id/edit_boat_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="5"
+                        android:textAlignment="center"
+                        fancy:mfb_borderColor="#FFFFFF"
+                        fancy:mfb_defaultColor="@color/colorAccent"
+                        fancy:mfb_focusColor="@color/colorAccentLight"
+                        fancy:mfb_fontIconSize="20dp"
+                        fancy:mfb_icon="@string/fawi_pencil"
+                        fancy:mfb_iconPosition="left"
+                        fancy:mfb_radius="10dp"
+                        fancy:mfb_text=""
+                        fancy:mfb_textSize="15dp" />
+                </LinearLayout>
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/boat_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_defaultColor="@color/colorPrimaryDark"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_textSize="15dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/pre_boat_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_borderColor="#FFFFFF"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_icon="@string/cmdi_content_paste"
+                    fancy:mfb_iconPosition="left"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_text="@string/boat_type_title"
+                    fancy:mfb_textSize="15dp" />
+
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/boat_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_defaultColor="@color/colorPrimaryDark"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_textSize="15dp">
+
+                </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/edit_boat_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_borderColor="#FFFFFF"
+                    fancy:mfb_defaultColor="@color/colorAccent"
+                    fancy:mfb_focusColor="@color/colorAccentLight"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_icon="@string/fawi_pencil"
+                    fancy:mfb_iconPosition="left"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_text=""
+                    fancy:mfb_textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/pre_boat_lefting_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_borderColor="#FFFFFF"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_icon="@string/fawi_archive"
+                    fancy:mfb_iconPosition="left"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_text="Volume restant"
+                    fancy:mfb_textSize="15dp" />
+
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/boat_lefting_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_defaultColor="@color/colorPrimaryDark"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_textSize="15dp">
+
+                </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_borderColor="#FFFFFF"
+                    fancy:mfb_defaultColor="@color/colorPrimary"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_icon="@string/fawi_anchor"
+                    fancy:mfb_iconPosition="left"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_text="Capitaine du bateau"
+                    fancy:mfb_textSize="15dp" />
+
+
+                <com.rilixtech.materialfancybutton.MaterialFancyButton
+                    android:id="@+id/boat_captain_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:textAlignment="center"
+                    fancy:mfb_defaultColor="@color/colorPrimaryDark"
+                    fancy:mfb_focusColor="@color/colorPrimary"
+                    fancy:mfb_fontIconSize="20dp"
+                    fancy:mfb_radius="10dp"
+                    fancy:mfb_textSize="15dp">
+
+                </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/sailor"
+                    tools:srcCompat="@drawable/sailor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.rilixtech.materialfancybutton.MaterialFancyButton
+                        android:id="@+id/show_boat_on_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/show_boat_on_map"
+                        android:textAlignment="center"
+                        fancy:mfb_borderColor="#FFFFFF"
+                        fancy:mfb_defaultColor="@color/grayForTitle"
+                        fancy:mfb_focusColor="@color/grayForTitle"
+                        fancy:mfb_fontIconSize="20dp"
+                        fancy:mfb_icon="@string/cmdi_map_marker_multiple"
+                        fancy:mfb_iconPosition="left"
+                        fancy:mfb_radius="30dp"
+                        fancy:mfb_textSize="20dp" />
+
+                    <com.rilixtech.materialfancybutton.MaterialFancyButton
+                        android:id="@+id/get_distance_from_harbor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/distance_from_harbor_btn_label"
+                        android:textAlignment="center"
+                        fancy:mfb_borderColor="#FFFFFF"
+                        fancy:mfb_defaultColor="@color/grayForTitle"
+                        fancy:mfb_focusColor="@color/grayForTitle"
+                        fancy:mfb_fontIconSize="20dp"
+                        fancy:mfb_icon="@string/cmdi_home_map_marker"
+                        fancy:mfb_iconPosition="left"
+                        fancy:mfb_radius="30dp"
+                        fancy:mfb_textSize="20dp">
+
+                    </com.rilixtech.materialfancybutton.MaterialFancyButton>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="top|bottom"
+            android:orientation="vertical">
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/label_container_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                fancy:mfb_borderColor="#FFFFFF"
+                fancy:mfb_defaultColor="@color/grayForTitle"
+                fancy:mfb_focusColor="@color/grayForTitle"
+                fancy:mfb_fontIconSize="30dp"
+                fancy:mfb_icon="@string/cmdi_information"
+                fancy:mfb_iconPosition="left"
+                fancy:mfb_radius="30dp"
+                fancy:mfb_text="@string/label_containers_list"
+                fancy:mfb_textSize="20dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b71c1c</color>
+    <color name="colorPrimaryDark">#d84315</color>
+    <color name="colorAccent">#3949ab</color>
+    <color name="colorAccentLight">#536dfe</color>
+    <color name="primaryForButtons">#e66666</color>
+    <color name="SecondaryForButtons">#e57373</color>
+    <color name="colorEditButtons">#388e3c</color>
+    <color name="colorEditButtonsPressed">#1b5e20</color>
+    <color name="grayForTitle">#424242</color>
+</resources>

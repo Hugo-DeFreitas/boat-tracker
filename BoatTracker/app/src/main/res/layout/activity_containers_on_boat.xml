@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activity.Welcome">
+
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+        android:id="@+id/label_container_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="3"
+        android:textAlignment="center"
+        fancy:mfb_borderColor="#FFFFFF"
+        fancy:mfb_defaultColor="@color/grayForTitle"
+        fancy:mfb_focusColor="@color/grayForTitle"
+        fancy:mfb_fontIconSize="30dp"
+        fancy:mfb_icon="@string/cmdi_information"
+        fancy:mfb_iconPosition="left"
+        fancy:mfb_radius="30dp"
+        fancy:mfb_text="@string/label_containers_list"
+        fancy:mfb_textSize="20dp" />
+
+    <ListView
+        android:id="@+id/containers_of_boat_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7" />
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/container_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            fancy:mfb_defaultColor="@color/colorAccent"
+            fancy:mfb_focusColor="@color/colorAccent"
+            fancy:mfb_fontIconSize="30dp"
+            fancy:mfb_icon="@string/fawi_inbox"
+            fancy:mfb_iconPosition="left"
+            fancy:mfb_radius="30dp">
+
+        </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/container_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="1"
+                fancy:mfb_borderColor="#FFFFFF"
+                fancy:mfb_defaultColor="@color/colorAccentLight"
+                fancy:mfb_focusColor="@color/colorAccentLight"
+                fancy:mfb_fontIconSize="30dp"
+                fancy:mfb_icon="@string/fawi_arrows_v"
+                fancy:mfb_iconPosition="left">
+
+            </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/container_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="1"
+                fancy:mfb_borderColor="#FFFFFF"
+                fancy:mfb_defaultColor="@color/colorAccentLight"
+                fancy:mfb_focusColor="@color/colorAccentLight"
+                fancy:mfb_fontIconSize="30dp"
+                fancy:mfb_icon="@string/cmdi_ruler"
+                fancy:mfb_iconPosition="left" />
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/container_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:weightSum="1"
+                fancy:mfb_borderColor="#FFFFFF"
+                fancy:mfb_defaultColor="@color/colorAccentLight"
+                fancy:mfb_focusColor="@color/colorAccentLight"
+                fancy:mfb_fontIconSize="30dp"
+                fancy:mfb_icon="@string/fawi_arrows_h"
+                fancy:mfb_iconPosition="left">
+
+            </com.rilixtech.materialfancybutton.MaterialFancyButton>
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:id="@+id/transfer_container_to_another_boat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                fancy:mfb_borderColor="#FFFFFF"
+                fancy:mfb_defaultColor="@color/colorEditButtons"
+                fancy:mfb_focusColor="@color/colorEditButtonsPressed"
+                fancy:mfb_fontIconSize="20dp"
+                fancy:mfb_icon="@string/fawi_exchange"
+                fancy:mfb_iconPosition="left"
+                fancy:mfb_radius="10dp"
+                fancy:mfb_text="Transfert vers un autre bateau"
+                fancy:mfb_textSize="15dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

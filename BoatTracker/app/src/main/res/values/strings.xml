@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BoatTracker</string>
+    <string name="welcome_message">Bienvenue sur BoatTracker!</string>
+    <string name="boat_image_description">Image d\'un bateau</string>
+    <string name="boat_captain_description">Icône du capitaine du bateau</string>
+    <string name="boat_name_title">Nom</string>
+    <string name="boat_type_title">Modèle</string>
+    <string name="boat_details_title">Détails du bateau</string>
+    <string name="distance_from_harbor_btn_label">Calcul Distance</string>
+    <string name="show_boat_on_map">Voir le bateau sur la carte</string>
+    <string name="title_activity_show_boat_on_map">Map</string>
+    <string name="log_out_label">Se déconnecter</string>
+    <string name="label_containers_list">Liste des containers présents dans la cargaison</string>
+    <string name="image_boat_in_harbor_description">Image d\'un bateau dans un port.</string>
+</resources>

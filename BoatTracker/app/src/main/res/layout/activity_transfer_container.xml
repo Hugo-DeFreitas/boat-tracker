@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.rilixtech.materialfancybutton.MaterialFancyButton
+            android:id="@+id/label_container_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            fancy:mfb_borderColor="#FFFFFF"
+            fancy:mfb_defaultColor="@color/grayForTitle"
+            fancy:mfb_focusColor="@color/grayForTitle"
+            fancy:mfb_fontIconSize="30dp"
+            fancy:mfb_icon="@string/cmdi_information"
+            fancy:mfb_iconPosition="left"
+            fancy:mfb_radius="30dp"
+            fancy:mfb_text="Le container actuel se situe sur le marker bleu. Transférer le container en cliquant sur un marker rouge."
+            fancy:mfb_textSize="15dp" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map_for_container_transfer"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".activity.TransferContainerOnMapActivity" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
